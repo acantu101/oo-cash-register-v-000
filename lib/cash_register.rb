@@ -30,12 +30,12 @@ attr_accessor :total, :discount, :quantity, :price, :elements
               end
            end
 
-        def add_item(total, quantity = 0)
+        def add_item
           #returns an array containing all items that have been added
-          @total
+        
           @items << @elements
           @items
-
+binding.pry
         end
 
         def void_last_transaction
