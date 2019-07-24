@@ -30,11 +30,13 @@ attr_accessor :total, :discount, :quantity, :price, :elements
               end
            end
 
-        def add_item
-          #returns an array containing all items that have been added
-            binding.pry
+        def add_item(quantity = 0)
+          #returns an array containing all items that have been added as many times as quantity expreses
+          i = 0
+          loop do 
           @items << @elements
-
+          i+=1
+          while i < quantity
           @items
 
         end
