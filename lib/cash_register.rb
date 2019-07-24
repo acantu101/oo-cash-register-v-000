@@ -3,7 +3,7 @@ require 'pry'
 class CashRegister
 
 
-attr_accessor :total, :discount, :quantity, :price, :item
+attr_accessor :total, :discount, :quantity, :price, :elements
 
 @@items = []
 
@@ -32,7 +32,7 @@ attr_accessor :total, :discount, :quantity, :price, :item
 
         def items
           #returns an array containing all items that have been added
-          @item = item
+          @elements = elements
           @items << @item
           @items
 
