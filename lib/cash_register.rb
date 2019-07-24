@@ -38,6 +38,7 @@ attr_accessor :total, :discount, :quantity, :price, :item
 
         def void_last_transaction
           #subtracts the last transaction from the total
+          @total = @total + @total
         end
 
       end
