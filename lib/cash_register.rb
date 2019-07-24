@@ -30,11 +30,9 @@ attr_accessor :total, :discount, :quantity, :price, :elements
               end
            end
 
-        def add_item(quantity = 0)
-          #returns an array containing all items that have been added as many times as quantity expreses
-          quantity.times { |i| @items << item }
-              @items
-        end
+      def add_item(title, amount, quantity=1)
+        quantity.times { @items << title }
+      end
 
         def void_last_transaction
           #subtracts the last transaction from the total
