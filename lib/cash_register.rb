@@ -4,7 +4,7 @@ class CashRegister
 
 
 attr_accessor :total, :discount, :quantity, :price, :item
-
+@@items = []
       def initialize(discount = "0")
 
         @total = 0
@@ -30,9 +30,10 @@ attr_accessor :total, :discount, :quantity, :price, :item
           end
        end
 
-        def items(item)
+        def items
           #returns an array containing all items that have been added
-          @item
+          @@items << self
+          @@items
 
         end
 
