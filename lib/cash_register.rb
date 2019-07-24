@@ -29,7 +29,7 @@ attr_accessor :total, :discount, :quantity, :price
               end
            end
 
-      def add_item(title, amount, quantity=1)
+      def add_item(title, amount, quantity = 1)
         quantity.times { @items << title }
         @items
       end
