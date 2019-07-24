@@ -9,6 +9,7 @@ attr_accessor :total, :discount, :quantity, :price, :item
 
       def initialize(discount = 0)
         @items = []
+        
         @total = 0
         @discount = discount
       end
@@ -31,7 +32,7 @@ attr_accessor :total, :discount, :quantity, :price, :item
 
         def items
           #returns an array containing all items that have been added
-
+          @item = item
           @items << @item
           @items
 
