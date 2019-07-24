@@ -29,10 +29,15 @@ attr_accessor :total, :discount, :quantity, :price
               end
            end
 
-      def add_item(title, amount, quantity = 1)
-        quantity.times { @items << title }
+           def add_item(title, price, quantity = 1)
 
-      end
+               @quantity = quantity
+               @total += price * quantity.to_i
+               quantity.times do |n|
+                 @items << title
+               end
+               #binding.pry
+             end
 
       def items
         @items
