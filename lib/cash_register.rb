@@ -31,7 +31,8 @@ items = []
 
         def items
           #returns an array containing all items that have been added
-
+          @item = item
+          items << item
         end
 
         def void_last_transaction
