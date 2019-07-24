@@ -32,7 +32,7 @@ attr_accessor :total, :discount, :quantity, :price, :elements
 
         def add_item(quantity = 0)
           #returns an array containing all items that have been added as many times as quantity expreses
-          quantity.times { |i| @items << i }
+          quantity.times { |i| @items << item }
               @items
         end
 
