@@ -3,8 +3,10 @@ require 'pry'
 class CashRegister
 
 
-attr_accessor :total, :discount, :quantity, :price, :items
-@@items = []
+attr_accessor :total, :discount, :quantity, :price, :item
+
+items = []
+
       def initialize(discount = "0")
 
         @total = 0
@@ -29,8 +31,6 @@ attr_accessor :total, :discount, :quantity, :price, :items
 
         def items
           #returns an array containing all items that have been added
-
-
 
         end
 
