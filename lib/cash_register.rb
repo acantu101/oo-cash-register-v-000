@@ -39,8 +39,9 @@ attr_accessor :total, :discount, :quantity, :price, :elements
           while i < quantity
 
             end
-            @items
+
           end
+              @items
         end
 
         def void_last_transaction
