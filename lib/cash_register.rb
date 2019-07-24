@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
 
-@@items_a = []
+
 attr_accessor :total, :discount, :quantity, :price, :item
 
       def initialize(discount = "0")
@@ -32,10 +32,8 @@ attr_accessor :total, :discount, :quantity, :price, :item
 
         def items
           #returns an array containing all items that have been added
-          @item = item
-          @@items_a << item
-          @@items_a
-          binding.pry
+          @item
+          
         end
 
         def void_last_transaction
@@ -45,3 +43,5 @@ attr_accessor :total, :discount, :quantity, :price, :item
       end
 
     end
+
+    
