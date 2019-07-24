@@ -33,7 +33,7 @@ attr_accessor :total, :discount, :quantity, :price, :elements
       def add_item(title, amount, quantity=1)
         quantity.times { @items << title }
         @items
-    
+
       end
 
         def void_last_transaction
