@@ -30,7 +30,7 @@ attr_accessor :total, :discount, :quantity, :price, :elements
               end
            end
 
-        def items
+        def add_item
           #returns an array containing all items that have been added
 
           @items << @elements
