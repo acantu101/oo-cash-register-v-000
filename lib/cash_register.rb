@@ -34,7 +34,7 @@ attr_accessor :total, :discount, :quantity, :price, :elements
           #returns an array containing all items that have been added
             binding.pry
           @items << @elements
-      
+
           @items
 
         end
