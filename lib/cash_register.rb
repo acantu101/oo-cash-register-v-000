@@ -37,9 +37,6 @@ attr_accessor :total, :discount, :quantity, :price, :elements
           quantity.times {@items << @elements} times quantity
 
 
-
-            end
-
           end
               @items
         end
