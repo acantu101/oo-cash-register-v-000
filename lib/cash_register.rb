@@ -37,7 +37,7 @@ attr_accessor :total, :discount, :quantity, :price, :elements
           @items << @elements
           i+=1
           while i < quantity
-          
+
             end
             @items
           end
